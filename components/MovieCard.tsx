@@ -1,4 +1,5 @@
 import React from 'react'
+import Image  from 'next/image'
 
 interface MovieCardProps{
     data: Record<string, any>
@@ -9,7 +10,7 @@ interface MovieCardProps{
 const MovieCard: React.FC<MovieCardProps> =({data}) => {
     return (
         <div className='group bg-zinc-900 col-span relative h-[12vw]'>
-                <img 
+                <Image 
                 className='cursor-pointer object-cover transition duration shadow-xl rounded-md
                 group-hover:opacity-90 sm:group-hover:opacity-0 delay-300 w-fu;; h-[12vw]
                 '
@@ -28,7 +29,7 @@ const MovieCard: React.FC<MovieCardProps> =({data}) => {
                     group-hover:-translate-y-[6vw]
                     group-hover:translate-x-[2vw] 
                     group-hover:opacity-100'>
-                        <img 
+                        <Image 
                         className='
                         cursor-pointer
                         object-cover
